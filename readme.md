@@ -1,4 +1,4 @@
-# Social Blue
+# Social Trek
 Social Blue is made to provide as a demo as well as a default style for Open Social. This is a sub theme of socialbase.
 
 Social Blue uses Gulp.js as a task runner, so that it can do many tasks automatically:
@@ -23,7 +23,7 @@ Any questions or feedback?
 [Create an issue on drupal.org](https://www.drupal.org/project/issues/social)
 
 
-# Getting started with your sub theme 
+# Getting started with your sub theme
 
 ### Drupal settings
 Before you start theming there are a few things that might be convenient. In html/sites/default there is a services.yml file. Make sure to set
@@ -49,7 +49,7 @@ Also in sites default you will find an example.settings.local.php file. Duplicat
     ```
     yarn install
     ```
-    
+
 4. Set the URL used to access the Drupal website under development. Edit your
     gulpfile.js file and change the options.drupalURL setting:
     ```
@@ -59,5 +59,4 @@ Also in sites default you will find an example.settings.local.php file. Duplicat
 4. There are different gulp tasks. What each gulp task does is described in the gulpfile with the task itself. To run a gulp task, type:
     ```
     gulp [taskname]
-    ``` 
- 
+    ```
