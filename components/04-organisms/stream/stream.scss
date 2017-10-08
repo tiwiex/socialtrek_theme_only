@@ -1,0 +1,24 @@
+@import "settings";
+
+.stream-icon-new {
+  //background:$brand-secondary;
+  background:#faa700;
+
+}
+
+.teaser--stream {
+
+  .teaser__image {
+    border-radius: 5;
+  }
+
+  &:last-child {
+    border-bottom-left-radius: $card-border-radius;
+    border-bottom-right-radius: $card-border-radius;
+
+    .card-image {
+      border-bottom-left-radius: $card-border-radius;
+    }
+  }
+
+}

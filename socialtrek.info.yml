@@ -1,0 +1,126 @@
+name: Social Trek Orange Theme
+description: Trek Afrik theme for Opensocial installations.
+screenshot: screenshot.png
+type: theme
+
+base theme: socialbase
+
+core: 8.x
+version: '1.1'
+
+libraries:
+  - socialtrek/brand
+  - socialtrek/site-footer
+  - socialtrek/custom
+
+libraries-extend:
+  socialbase/base:
+    - socialtrek/base
+  socialbase/alert:
+    - socialtrek/alert
+  socialbase/badge:
+    - socialtrek/badge
+  socialbase/button:
+    - socialtrek/button
+  socialbase/cards:
+    - socialtrek/cards
+  socialbase/form-controls:
+    - socialtrek/form-controls
+  socialbase/list:
+    - socialtrek/list
+  socialbase/spinner:
+    - socialtrek/spinner
+  # Extend molecules
+  socialbase/breadcrumb:
+    - socialtrek/breadcrumb
+  socialbase/dropdown:
+    - socialtrek/dropdown
+  socialbase/file:
+      - socialtrek/file
+  socialbase/form-elements:
+    - socialtrek/form-elements
+  socialbase/form--input-groups:
+    - socialtrek/form--input-groups
+  socialbase/like:
+    - socialtrek/like
+  # attach the datepicker stylesheet to all date fields
+  core/drupal.date:
+    - socialtrek/form--datepicker
+  # extend the core datepicker with a stylesheet
+  core/jquery.ui.datepicker:
+    - socialtrek/form--timepicker
+  socialbase/form--password:
+    - socialtrek/form--password
+  socialbase/pagination:
+    - socialtrek/pagination
+  socialbase/popover:
+    - socialtrek/popover
+  socialbase/nav-book:
+    - socialtrek/nav-book
+  socialbase/nav-tabs:
+    - socialtrek/nav-tabs
+  socialbase/navbar:
+    - socialtrek/navbar
+  socialbase/teaser:
+    - socialtrek/teaser
+  socialbase/tour:
+    - socialtrek/tour
+  # Extend Organisms
+  socialbase/comment:
+    - socialtrek/comment
+  socialbase/hero:
+    - socialtrek/hero
+  socialbase/meta:
+    - socialtrek/meta
+  socialbase/modal:
+    - socialtrek/modal
+  socialbase/offcanvas:
+    - socialtrek/offcanvas
+  socialbase/stream:
+    - socialtrek/stream
+  socialbase/page-node:
+    - socialtrek/page-node
+  socialbase/tables:
+    - socialtrek/tables
+  ckeditor_stylesheets:
+    - assets/css/ckeditor.css
+  socialbase/custom:
+    - socialtrek/custom
+
+# This section is used by the contrib module, Component Libraries. It allows you
+# to reference .twig files in your components/ directory.
+component-libraries:
+  base:
+    paths:
+      - components/01-base
+  atoms:
+    paths:
+      - components/02-atoms
+  molecules:
+    paths:
+      - components/03-molecules
+  organisms:
+    paths:
+      - components/04-organisms
+  templates:
+    paths:
+      - components/05-templates
+  pages:
+    paths:
+      - components/06-pages
+
+regions:
+  hidden: Hidden
+  header: Header
+  breadcrumb: Breadcrumb
+  hero: Hero
+  secondary_navigation: Secondary navigation
+  content_top: Content top
+  title: Page title
+  content: Content
+  complementary_top: Complementary top
+  complementary_bottom: Complementary bottom
+  content_bottom: Content bottom
+  sidebar_first: Sidebar First
+  sidebar_second: Sidebar Second
+  footer: Footer
